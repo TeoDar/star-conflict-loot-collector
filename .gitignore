@@ -1,0 +1,5 @@
+.venv
+broken
+build
+dist
+*.spec
