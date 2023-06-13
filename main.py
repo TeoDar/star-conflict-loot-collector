@@ -22,7 +22,7 @@ def searching(SEARCHING_ACTIVE: Manager):
     Amount = 5
     while SEARCHING_ACTIVE.value:
         print("Ожидаю окончания сражения")
-        searching_start = locateCenterOnScreen(searching_sample, confidence=0.9, grayscale=True)
+        searching_start = locateCenterOnScreen(searching_sample, confidence=0.6, grayscale=True)
         sleep(0.5)
         if searching_start:
             print("    Добываем!!!")
