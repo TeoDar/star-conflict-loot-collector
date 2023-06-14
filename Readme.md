@@ -25,3 +25,6 @@ pip install -r ./requirements.txt
 ```
 python main.py
 ```
+---
+### TODO:
+- Сбор синих и фиолетовых точек
