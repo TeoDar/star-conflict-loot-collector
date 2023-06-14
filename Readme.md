@@ -2,7 +2,7 @@
 ## Автоматический сборщик ценностей 
 ## Loot auto collector
 
-https://www.youtube.com/embed/oBBkXlzzDBg
+https://github.com/TeoDar/star-conflict-loot-collector/assets/40923004/a48cc62c-650d-48cb-aa7f-cf10d4a6bf26
 
 ---
 ### Воспользуйтесь собранным exe:
