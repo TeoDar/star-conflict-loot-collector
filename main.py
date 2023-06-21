@@ -12,7 +12,6 @@ last_proc: Process
 
 def clicking(loc) -> None:
     print(f"        Нашёл: {loc}")
-
     moveTo(loc)
     mouseDown()
     sleep(2)
@@ -45,14 +44,12 @@ def searching(SEARCHING_ACTIVE: Manager):
         print("Ожидаю окончания сражения")
         searching_start = check_battle_end()
         if searching_start:
-            print("    ")
-            purp_point_location = locateAllOnScreen(purp_point, confidence=0.8)
-            blue_point_location = locateAllOnScreen(blue_point, confidence=0.8)
-            point_location = locateAllOnScreen(point, confidence=0.85, grayscale=True)
-            if not purp_point_location and not blue_point_location and not point_location:
+            point_locations = locateAllOnScreen(point, confidence=0.85, grayscale=True)
+            if not point_locations:
                 print(f"\nЦенностей не найдено\n")
                 break
-
+            else:
+                filtering()
             print("    Добыча завершена\n")
             sleep(5)
     print('Для запуска/остановки поиска нажмите "F2"\nДля завершения нажмине "F3"')
